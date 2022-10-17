@@ -161,31 +161,34 @@
                     <img src="./img/background.jpg" class="img-fluid" width="100%" height="300px">
                 </div>
                 <div class="col-lg-6 col-md-6 col-12">
-                    <div class="wrapper">
+                    <div class="wrapper" >
                         <h2>Contact us</h2>
                         <div id="error_message">
                         </div>
-                        <form action="" id="myform" onsubmit = "return validate()">
                           <div class="input_field">
-                              <input type="text" placeholder="Name" id="name"><small>Enter  valid name</small>
+                              <input type="text" placeholder="Name" id="name">
+                              <small class="name-error">Enter a valid Name</small>
+                          </div>
+                          
+                          <div class="input_field">
+                              <input type="text" placeholder="Subject" id="subject">
+                              <small class="subject-error">Enter a valid information</small>
                           </div>
                           <div class="input_field">
-                              <input type="text" placeholder="Subject" id="subject"><small>Enter  valid subject</small>
+                              <input type="number" placeholder="Phone" id="phone">
+                              <small class="number-error">Enter a valid Number</small>
                           </div>
                           <div class="input_field">
-                              <input type="number" placeholder="Phone" id="phone"><small>Enter  valid  number</small>
+                              <input type="mail" placeholder="Email" id="email">
+                              <small class="mail-error">Enter a valid mail-id</small>
                           </div>
                           <div class="input_field">
-                              <input type="text" placeholder="Email" id="email"><small>Enter  valid mail-id</small>
-                          </div>
-                          <div class="input_field">
-                              <textarea placeholder="Message" id="message"></textarea><small>Enter  valid Input</small>
-                          </div>
+                              <textarea placeholder="Message" id="message"></textarea>
+                              <small class="message-error">This page cannot be left blank</small>
                           <div class="btn">
-                            <input type="submit">
+                            <button onclick="validate()">submit</button>
                         </div>
                           </div>
-                      </div>
                 </div>
             </div>
         </div>
