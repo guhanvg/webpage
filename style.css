@@ -119,6 +119,10 @@ li{
     resize: none;
     height: 80px;
   }
+  .wrapper small{
+    display: none;
+    color: red;
+  }
   
   .wrapper .btn input[type="submit"]{
     border: 0px;
